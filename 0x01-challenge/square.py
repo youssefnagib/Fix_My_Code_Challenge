@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 """Defines square class"""
 
+
 class Square():
     """Square class"""
-    
+
     width = 0
     height = 0
 
-    
     def __init__(self, *args, **kwargs):
         """init square class"""
         for key, value in kwargs.items():
@@ -23,6 +23,7 @@ class Square():
     def __str__(self):
         """Returns a string representation of the square"""
         return "{}/{}".format(self.width, self.height)
+
 
 if __name__ == "__main__":
     """main function"""
